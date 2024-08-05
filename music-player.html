@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player App</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- icon -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="above-btn">
+            <button><span class="material-symbols-outlined">
+                    arrow_back
+                </span>
+            </button>
+            <button><span class="material-symbols-outlined">
+                    queue_music
+                </span></button>
+        </div>
+
+        <div class="content">
+            <img class="song-cover"
+                src="https://img.freepik.com/premium-photo/wonderful-dream-background_717440-29.jpg?w=1380"
+                alt="song-cover">
+            <h2 class="song-title">Stronger (What Doesn't Kill You)</h2>
+            <h3 class="song-artist">Kelly Clarkson</h3>
+            <audio id="song" controls src="./stronger.mp3"></audio>
+            <input id="songProgress" class="progress-bar" type="range" />
+        </div>
+
+        <div class="below-btn">
+            <button><span class="material-symbols-outlined">
+                    fast_rewind
+                </span></button>
+            <button id="playBtn" class="play-btn"><span class="material-symbols-outlined">
+                    play_arrow
+                </span></button>
+            <button id="pauseBtn" class="pause-btn"><span class="material-symbols-outlined">
+                    pause
+                </span></button>
+            <button><span class="material-symbols-outlined">
+                    fast_forward
+                </span></button>
+        </div>
+
+    </div>
+</body>
+<script src="./app.js"></script>
+
+</html>

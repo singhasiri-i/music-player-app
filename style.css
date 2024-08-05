@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    background-color: rgb(170, 235, 213);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 440px;
+    height: 640px;
+    background: linear-gradient(90deg, #2d50a2 0%, #182848 100%);
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.above-btn, .below-btn {
+    display: flex;
+    margin: 30px 30px 0;
+    background-color: transparent;
+}
+
+.above-btn {
+    justify-content: space-between;
+}
+
+.below-btn {
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+button {
+    width: 50px;
+    height: 50px;
+    border: 3px solid darkslategrey;
+    border-radius: 100%;
+    color: darkslategrey;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    cursor: pointer;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 1, /* ถมดำให้ปุ่ม */
+        'wght' 800,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+.play-btn, .pause-btn {
+    width: 80px;
+    height: 80px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+}
+
+.song-cover {
+    width: 230px;
+    height: 230px;
+    border: 5px solid darkslategrey;
+    border-radius: 100%;
+}
+
+.content h2, h3 {
+    color: rgb(170, 235, 213);
+    background-color: transparent;
+}
+
+.song-artist {
+    margin-top: -10px;
+    margin-bottom: 50px;
+}
+
+.progress-bar {
+    -webkit-appearance: none; /* ล้าง style ให้ bar ก่อน ถึงจะจัด style ใหม่ได้ */
+    width: 80%;
+    height: 5px;
+    background-color: rgb(170, 235, 213);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.progress-bar::-webkit-slider-thumb { /* เข้าถึง stlye ของตุ่มกลมๆ ที่ใช้เลื่อน */
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    background-color: darkslategrey;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+audio {
+    display: none;
+}
